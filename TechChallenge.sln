@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.WebApi", "TechChallenge.WebApi\TechChallenge.WebApi.csproj", "{EF0B278A-8036-477A-B81E-8A93D97E395E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{045D58C1-A9A4-47CC-BD8C-F82A16FB920A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{76E37894-86CD-4BAD-8485-602572E3C906}"
+	ProjectSection(SolutionItems) = preProject
+		docker\mysql\init.sql = docker\mysql\init.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF0B278A-8036-477A-B81E-8A93D97E395E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0B278A-8036-477A-B81E-8A93D97E395E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0B278A-8036-477A-B81E-8A93D97E395E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0B278A-8036-477A-B81E-8A93D97E395E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045D58C1-A9A4-47CC-BD8C-F82A16FB920A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045D58C1-A9A4-47CC-BD8C-F82A16FB920A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045D58C1-A9A4-47CC-BD8C-F82A16FB920A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045D58C1-A9A4-47CC-BD8C-F82A16FB920A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AD6459C-6669-4945-A96E-BBB69500087A}
+	EndGlobalSection
+EndGlobal
