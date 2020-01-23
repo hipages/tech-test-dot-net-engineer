@@ -53,20 +53,20 @@ From the root of the project, run `docker-compose up -d`
 If at any point you want to refresh the database, you can stop the Docker containers (`docker-compose down`) and start them again
 
 ## Deliverables
-# Required
+### Required
 * .Net Core 3.1 Web API to provide RESTful service
 * SPA (React, Anular or any modern framework of your choice)
 * Database (SQL or NoSQL)
 
-# Nice to Have (Advanced)
+### Nice to Have (Advanced)
 * CQRS - Ideally using MediatR
 * Following DDD principles for business logic (Domain Driven Design)
 
-# Nice to Have (Super Advanced)
+### Nice to Have (Super Advanced)
 * Use EventSourcing
 
 ## Evaluation Criteria
-Evaluation is based on clean coding skills, design & problem skills and using of modern technologies.
+Evaluation is based on clean coding skills, design & problem solving skills and the use of modern technologies.
     
 ## Submission
 Please document your solution in the SOLUTION.md file.  This should explain why you've made the design choices that you have and clarify anything you feel isn't obvious.  Feel free to also include what else you would have done given more time.
