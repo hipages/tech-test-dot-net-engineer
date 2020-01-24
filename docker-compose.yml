@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  techchallenge.webapi:
+    image: ${DOCKER_REGISTRY-}techchallengewebapi
+    build:
+      context: .
+      dockerfile: TechChallenge.WebApi/Dockerfile
+    ports:
+      - "8090:80"
+      - "8091:443"
+    depends_on:
+        - techchallenge.mysql
+    networks:
+        - techchallenge.network
+
+  techchallenge.mysql:
+    image: mysql:5.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: hipages
+      MYSQL_DATABASE: hipages
+    ports:
+      - "3306:3306"
+    volumes:
+        - ./docker/mysql:/docker-entrypoint-initdb.d
+    networks:
+        - techchallenge.network
+
+networks:
+  techchallenge.network:
+    driver: bridge
