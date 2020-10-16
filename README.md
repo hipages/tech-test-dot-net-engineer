@@ -4,7 +4,7 @@ Welcome to the hipages Full Stack .Net Engineer Tech Challenge!  The purpose of 
 
 ## The Task
 Your task is to create a lead management UI for a tradie.  
-This should be presented as a single page application (SPA) using a modern JS framework of your choice, backed by .Net Core Web API and using database of your choice (SQL or NoSQL).
+This should be presented as a single page application (SPA) using React, backed by .Net Core Web API and using database of your choice (SQL or NoSQL).
 
 ### Invited Tab
 The first view you need to create is the **Invited** tab, which contains all leads in the **new** status.
@@ -48,25 +48,21 @@ From the root of the project, run `docker-compose up -d`
     * The username is `root`
     * The password is `hipages`
     * The database is `hipages`
-* Note that SPA (UI) project has not been created in this boilderplate as it might vary depending on the framework of choice (Ideally React or Angular).
 
 If at any point you want to refresh the database, you can stop the Docker containers (`docker-compose down`) and start them again
 
 ## Deliverables
 ### Required
+* SPA (React), focus on maintenance, reusability and organisation of ui components.
 * .Net Core 3.1 Web API to provide RESTful service
-* SPA (React, Anular or any modern framework of your choice)
 * Database (SQL or NoSQL)
 
 ### Nice to Have (Advanced)
 * CQRS - Ideally using MediatR
 * Following DDD principles for business logic (Domain Driven Design)
 
-### Nice to Have (Super Advanced)
-* Use EventSourcing
-
 ## Evaluation Criteria
-Evaluation is based on clean coding skills, design & problem solving skills and the use of modern technologies.
+Evaluation is based on clean coding skills, ui impelementation, design & problem solving skills and the use of modern technologies.
     
 ## Submission
 Please document your solution in the SOLUTION.md file.  This should explain why you've made the design choices that you have and clarify anything you feel isn't obvious.  Feel free to also include what else you would have done given more time.
